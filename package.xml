@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package>
+    <name>lavi_news</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>news for your website.</summary>
+    <description>News&#xD;
+&#xD;
+We can create news which will show on left side or right side and give a link in footer.&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#x201C;News&#x201C; extension easy to install and managable. Install module , Clear cache and logout, login again to admin panel. Check System-&gt;Configuration, in left side Go to &#x201C;Lavi News&#x201C;, here manage extension options. On frontend view News in left and right position which is enable in System-&gt;Configuration and also give a link "News" in footer.&#xD;
+&#xD;
+&#xD;
+&#xD;
+Features:&#xD;
+&#xD;
+Create and show news. &#xD;
+&#xD;
+Easy to install&#xD;
+&#xD;
+&#xD;
+&#xD;
+Steps:&#xD;
+&#xD;
+Install module , Clear cache and logout, login again. Check System-&gt;Configuration, in left side Go to &#x201C;Lavi News&#x201C;,here manage extension options.&#xD;
+&#xD;
+Front end: Give a link "News" in footer and view top latest news in left and right position which is enable in System-&gt;Configuration.&#xD;
+&#xD;
+&#xD;
+&#xD;
+Support&#xD;
+&#xD;
+Note :- if you need customization and help Click here to mail. </description>
+    <notes>news for your website.</notes>
+    <authors><author><name>Navneet</name><user>navneetkoshik</user><email>navneet.kshk@gmail.com</email></author></authors>
+    <date>2015-07-04</date>
+    <time>08:01:40</time>
+    <contents><target name="magecommunity"><dir name="Lavi"><dir name="News"><dir name="Block"><dir name="Adminhtml"><dir name="News"><dir name="Edit"><dir name="Form"><dir name="Element"><file name="Image.php" hash="beceeb4f69d761ca4a8ea2cc7dee3bab"/></dir></dir><file name="Form.php" hash="0f77f2f9d1439f718c1653c43a335004"/><dir name="Tab"><file name="Content.php" hash="7ae75ee0ba29c9f690a4276ce6220bf2"/><file name="Image.php" hash="6f27b652269437818043e10ca038719a"/><file name="Main.php" hash="b821e2fee5bd27fd0e91d450731f445f"/></dir><file name="Tabs.php" hash="0134b49cf07fb0104c4d57b3aa356560"/></dir><file name="Edit.php" hash="2995fcfe3289acecbbdd6dac015a4924"/><file name="Grid.php" hash="1117a2aa9b745db84fa6b5068d9165ae"/></dir><file name="News.php" hash="22b973532c43ee5c77ca1d2cdc1238dd"/></dir><file name="Item.php" hash="cc987c3821dade594be1eff3dbc4ecfd"/><file name="List.php" hash="dca4cc3e3781530fea082872cc3f7806"/><file name="Sidebar.php" hash="910f85d52d83c4f3131a0823f301245c"/></dir><dir name="Helper"><file name="Admin.php" hash="ae3c814a90b237d7518d3df4ff492dff"/><file name="Data.php" hash="d1351978852b5f8926e32cc9e6257573"/><file name="Image.php" hash="806b6cd0087f96e2e30f4fcec7f130dc"/></dir><dir name="Model"><file name="News.php" hash="9e3f1d81ca48f91370aacd4e33e922a9"/><file name="Observer.php" hash="63ca126554a2324e445f1225999358f2"/><dir name="Resource"><dir name="News"><file name="Collection.php" hash="7ca8b024e7851421ce0e26b906acd65e"/></dir><file name="News.php" hash="313d755bc0c001cdc1c2f5deae4899bf"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="NewsController.php" hash="49cafc17f63f33a571cee6f495721307"/></dir><file name="IndexController.php" hash="75880c2d7016b342d7a31e54eb191041"/></dir><dir name="etc"><file name="adminhtml.xml" hash="e3b716b662a733a4a05b5686a4f55fd6"/><file name="config.xml" hash="fc64a8f82fe4546409ef7fa1dd5a23fe"/><file name="system.xml" hash="8c231f1bdca33ad0fcf19fc694ff6625"/></dir><dir name="sql"><dir name="lavi_news_setup"><file name="install-1.0.0.0.1.php" hash="292e06277fe9715265e58f8f95d01c9a"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="lavi_news.xml" hash="3287e25d6ac84826ed9ed014f02ebe83"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="lavi_news.xml" hash="e1f15bbc2710ed1317038d2d8a1a1442"/></dir><dir name="template"><dir name="lavi"><dir name="news"><file name="item.phtml" hash="22fea186966c75817f7053e39250434c"/><file name="list.phtml" hash="d4ad7bc8e3c7107b3dddcd5fa12e0622"/><file name="sidebar.phtml" hash="2fd8e8259a4f0683bc1b256f2006d67a"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Lavi_News.xml" hash="d758e1387b8498a27a69243aac6bbfea"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

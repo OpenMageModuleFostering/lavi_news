@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * SAGIPL
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * 
+ * @category   	SAGIPL
+ * @package	Lavi_News
+ * @copyright  	Copyright (c) 2014 SAGIPL. (http://www.sagipl.com/)
+ * @license	http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+
+/**
+ * Free Shipping Offer Message
+ *
+ * @category	SAGIPL
+ * @package	Lavi_News
+ * @author	Navneet <navneet.kshk@gmail.com>
+ */
+-->
+<config>
+    <modules>
+        <Lavi_News>
+            <version>1.0.0</version>
+        </Lavi_News>
+    </modules>
+    <global>
+        <models>
+            <lavi_news>
+                <class>Lavi_News_Model</class>
+                <resourceModel>news_resource</resourceModel>
+            </lavi_news>
+            <news_resource>
+                <class>Lavi_News_Model_Resource</class>
+                <entities>
+                    <news>
+                        <table>lavi_news</table>
+                    </news>
+                </entities>
+            </news_resource>
+        </models>
+        <helpers>
+            <lavi_news>
+                <class>Lavi_News_Helper</class>
+            </lavi_news>
+        </helpers>
+        <blocks>
+            <lavi_news>
+                <class>Lavi_News_Block</class>
+            </lavi_news>
+        </blocks>
+        <resources>
+            <lavi_news_setup>
+                <setup>
+                    <module>Lavi_News</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </lavi_news_setup>
+        </resources>
+        <events>
+            <before_news_item_display>
+                <observers>
+                    <lavi_news>
+                        <class>lavi_news/observer</class>
+                        <method>beforeNewsDisplayed</method>
+                    </lavi_news>
+                </observers>
+            </before_news_item_display>
+        </events>
+    </global>
+    <frontend>
+        <routers>
+            <lavi_news>
+                <use>standard</use>
+                <args>
+                    <module>Lavi_News</module>
+                    <frontName>news</frontName>
+                </args>
+            </lavi_news>
+        </routers>
+        <layout>
+            <updates>
+                <lavi_news>
+                    <file>lavi_news.xml</file>
+                </lavi_news>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Lavi_News before="Mage_Adminhtml">Lavi_News_Adminhtml</Lavi_News>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <lavi_news>
+                    <file>lavi_news.xml</file>
+                </lavi_news>
+            </updates>
+        </layout>
+    </adminhtml>
+    <default>
+        <news>
+            <view>
+                <enabled>1</enabled>
+                <items_per_page>20</items_per_page>
+                <days_difference>3</days_difference>
+            </view>
+        </news>
+    </default>
+</config>
