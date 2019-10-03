@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/lavi_news",
+    "name": "OpenMageModuleFostering\/lavi_news",
     "type": "magento-module",
     "license": "osl",
     "homepage": "",
     "description": "News extension for creating news with title, image, author, content, published to date. Allow to show on front",
     "authors": [
-    {
-        "name": "Navneet",
-        "email": "navneet.kshk@gmail.com"
-    }
-],
+        {
+            "name": "Navneet",
+            "email": "navneet.kshk@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
